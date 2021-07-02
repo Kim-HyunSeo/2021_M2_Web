@@ -1,3 +1,5 @@
+// login form edit
+
 const loginForm = document.querySelector(".loginForm"),
     loginBtn = document.querySelector(".fa-user");
 
@@ -26,44 +28,70 @@ function writeFormControl(event) {
     }
 }
 
-writeButton.addEventListener("click", writeFormControl)
+writeButton.addEventListener("click", writeFormControl);
 
 // carousel edit
 
-const carousel = document.querySelector(".carousel"),
+const body = document.querySelector("body"),
+    carousel = document.querySelector(".carousel"),
     carouselItem = document.querySelector(".carouselItem"),
-    body = document.querySelector("body");
+    carouselBtn1 = document.querySelector(".carouselbtn1"),
+    carouselBtn2 = document.querySelector(".carouselbtn2"),
+    carouselBtn3 = document.querySelector(".carouselbtn3");
 
-let Width = body.offsetWidth;
-let p = 0
+let Width = body.offsetWidth,
+    p = 0
 
-function slide(event) {
+function resize(event) {
+    Width = body.offsetWidth;
+    carousel.style.width = `${Width * 3}px`;
+    carouselItem.style.width = `${Width}px`;
+    carousel.style.transform = `translateX(0px)`;
+};
+
+function slideHandle(event) {
     if (-(Width * 2) < p) {
         p = p - Width;
     } else {
         p = 0;
     }
-    carousel.style.transform = `translateX(${p}px)`
+    carousel.style.transform = `translateX(${p}px)`;
     buttonColor();
-}
-
-function resize(event) {
-    Width = body.offsetWidth;
-    carousel.style.width = `${Width * 3}px`
-    carouselItem.style.width = `${Width}px`
-    carousel.style.transform = `translateX(0px)`
-}
+};
 
 function buttonColor() {
     if (carousel.style.transform == `translateX(0px)`) {
-        document.querySelector(".carouselbtn1").style.backgroundColor = `red`;
-    } else if (carousel.style.transform == `translateX(0px)`) {
-        document.querySelector(".carouselbtn1").style.backgroundColor = `red`;
+        carouselBtn1.style.backgroundColor = `red`;
+        carouselBtn2.style.backgroundColor = `#EFEFEF`;
+        carouselBtn3.style.backgroundColor = `#EFEFEF`;
+    } else if (carousel.style.transform == `translateX(${-(Width)}px)`) {
+        carouselBtn1.style.backgroundColor = `#EFEFEF`;
+        carouselBtn2.style.backgroundColor = `red`;
+        carouselBtn3.style.backgroundColor = `#EFEFEF`;
+    } else if (carousel.style.transform == `translateX(${-(Width * 2)}px)`) {
+        carouselBtn1.style.backgroundColor = `#EFEFEF`;
+        carouselBtn2.style.backgroundColor = `#EFEFEF`;
+        carouselBtn3.style.backgroundColor = `red`;
+    };
+};
+
+const btnHandler = {
+    btn1: function btn1(event) {
+        carousel.style.transform = `translateX(0px)`;
+        buttonColor();
+    }, btn2: function btn2(event) {
+        carousel.style.transform = `translateX(${-(Width)}px)`;
+        buttonColor();
+    }, btn3: function btn3(event) {
+        carousel.style.transform = `translateX(${-(Width * 2)}px)`;
+        buttonColor();
     }
-}
+};
 
-resize();
+carouselBtn1.addEventListener("click", btnHandler.btn1);
+carouselBtn2.addEventListener("click", btnHandler.btn2);
+carouselBtn3.addEventListener("click", btnHandler.btn3);
 
-document.querySelector(".carouselbtn1").style.backgroundColor = `red`;
 window.addEventListener("resize", resize);
-carousel.addEventListener("click", slide);
+carousel.addEventListener("click", slideHandle);
+carouselBtn1.style.backgroundColor = `red`;
