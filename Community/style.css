@@ -483,21 +483,8 @@ main .actortitle {
     line-height: 26px;
 }
 
-main hr {
-    margin: 0;
-}
-
 .writebutton {
     position: relative;
-    transition: .5s;
-}
-
-.write {
-    transition: .5s;
-}
-
-.write:hover {
-    transform: scale(105%);
 }
 
 .actorinput {
