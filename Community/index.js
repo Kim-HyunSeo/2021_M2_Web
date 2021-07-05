@@ -1,7 +1,7 @@
 // login form edit
 
 const loginForm = document.querySelector(".loginForm"),
-    loginBtn = document.querySelector(".fa-user");
+    loginBtn = document.querySelector(".headerLogIn");
 
 const LOGIN_SHOW = "loginShowing";
 
