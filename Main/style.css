@@ -1201,9 +1201,9 @@ input::placeholder {
     height: 30px;
     line-height: 15px;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid #fafafa;
     border-radius: 15px;
-    background-color: white;
+    background-color: #fafafa;
     transition: .3s;
     font-size: 16px;
 }
@@ -1211,7 +1211,7 @@ input::placeholder {
 .main6_4 button:hover {
     background-color: rgba(185, 224, 227);
     border: 1px solid rgba(185, 224, 227);
-    color: white;
+    color: #fafafa;
 }
 
 /* footer details */
@@ -1261,8 +1261,12 @@ footer th, td {
     padding: 10px 0;
 }
 
+footer table tr .notice {
+    cursor: pointer;
+}
+
 footer .pagelinks a {
-    cursor: default;
+    cursor: pointer;
 }
 
 footer .contact {
@@ -1282,27 +1286,24 @@ footer .snslink {
 }
 
 footer .snslink button {
-    height: 32px;
+    height: 36px;
     font-size: 26px;
     border: none;
     margin-right: 8px;
     padding: 0;
+    cursor: pointer;
 }
 
 footer .fa-youtube {
     color: red;
-}
-
-footer .fa-instagram {
-    background: linear-gradient(to bottom, rgb(252, 176, 69), rgb(253, 29, 29), rgb(131, 58, 180));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    line-height: 36px;
+    font-size: 30px;
+    width: 30px;
 }
 
 footer .gschool {
-    height: 30px;
-    border: 1px solid #001354;
+    height: 36px;
+    cursor: pointer;
 }
 
 footer .copyright {

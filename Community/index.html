@@ -6,22 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e51a965d12.js" crossorigin="anonymous"></script>
-    <title>커튼콜 | 커뮤니티</title>
+    <title>커뮤니티 | 커튼콜</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- <div>
-        <button class="chatshortcut">채팅으로 바로가기 <i class="fas fa-angle-right"></i></button>
-    </div> -->
     <header>
         <div class="header_inner_container">
             <div class="logo_nav">
-                <img class="logo" src="images/ssArtboard 1.svg">
+                <img class="logo" onclick="window.open('../main/index.html')" src="images/ssArtboard 1.svg">
                 <nav>
-                    <a href="">연극</a>
-                    <a href="">커뮤니티</a>
-                    <a href="">팀소개</a>
+                    <a href="../genre/index.html">연극</a>
+                    <a href="../community/index.html">커뮤니티</a>
+                    <a href="../team/index.html">팀소개</a>
                 </nav>
             </div>
             <div class="searchbox">
@@ -228,7 +225,6 @@
             </section>
         </div>
     </main>
-
     <footer>
         <div class="footer_container">
             <div class="footer_inner_container">
@@ -236,23 +232,26 @@
                 <table>
                     <tr>
                         <td class="tablestrong">Notice</td>
-                        <td>----- 공지사항 -----</td>
+                        <td class="notice">----- 공지사항 -----</td>
                     </tr>
                     <tr>
                         <td class="tablestrong">Pages</td>
                         <td class="pagelinks">
-                            <a>연극</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>커뮤니티</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>팀소개</a>
+                            <a href="../genre/index.html">연극</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                                href="../community/index.html">커뮤니티</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                                href="../team/index.html">팀소개</a>
                         </td>
                     </tr>
                 </table>
                 <div class="contact">
                     <div class="address">
-                        서울특별시 종로구 대학로 116 공공일호 4층<br>010 - 1234 - 5678&nbsp;&nbsp;|&nbsp;&nbsp;kkaetoli@gmail.com
+                        서울특별시 종로구 대학로 116 공공일호 4층<br>kkaetoli@gmail.com
                     </div>
                     <div class="snslink">
-                        <button><i class="fab fa-youtube"></i></button>
-                        <button><i class="fab fa-instagram"></i></button>
-                        <img class="gschool" src="images/거꾸로_캠퍼스(positive)_가로형.png">
+                        <button onclick="window.open('https://www.youtube.com/channel/UCWppseMl7rCqEcVlgdFVQhA')"><i
+                                class="fab fa-youtube"></i></button>
+                        <img onclick="window.open('https://gschool.kr')" class="gschool"
+                            src="images/거꾸로_캠퍼스(positive)_가로형.png">
                     </div>
                 </div>
                 <p class="copyright">

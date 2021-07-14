@@ -1,4 +1,4 @@
-@import url(reset.css);
+@import url(./reset.css);
 a {
     text-decoration: none;
     color: black;
@@ -9,16 +9,6 @@ body {
     padding-top: 60px;
     width: 100%;
     /* overflow-x: hidden; */
-}
-
-.chatshortcut {
-    position: fixed;
-    right: 36px;
-    bottom: 24px;
-    width: 144px;
-    height: 36px;
-    border-radius: 72px;
-    border: 1.5px solid black;
 }
 
 .far {
@@ -70,7 +60,8 @@ header nav a {
     padding: 6px;
     font-size: 20px;
     transition: .5s;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
 header nav a:hover {
@@ -607,7 +598,7 @@ main table th {
 }
 
 .table_row {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     height: 40px;
     padding: 11px 22px 11px 16px;
@@ -674,7 +665,6 @@ main table th {
     font-size: 16px;
 }
 
-
 .main6_4 button:hover {
     background-color: rgba(185, 224, 227);
     border: 1px solid rgba(185, 224, 227);
@@ -728,8 +718,12 @@ footer th, td {
     padding: 10px 0;
 }
 
+footer table tr .notice {
+    cursor: pointer;
+}
+
 footer .pagelinks a {
-    cursor: default;
+    cursor: pointer;
 }
 
 footer .contact {
@@ -749,27 +743,24 @@ footer .snslink {
 }
 
 footer .snslink button {
-    height: 32px;
+    height: 36px;
     font-size: 26px;
     border: none;
     margin-right: 8px;
     padding: 0;
+    cursor: pointer;
 }
 
 footer .fa-youtube {
     color: red;
-}
-
-footer .fa-instagram {
-    background: linear-gradient(to bottom, rgb(252, 176, 69), rgb(253, 29, 29), rgb(131, 58, 180));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    line-height: 36px;
+    font-size: 30px;
+    width: 30px;
 }
 
 footer .gschool {
-    height: 30px;
-    border: 1px solid #001354;
+    height: 36px;
+    cursor: pointer;
 }
 
 footer .copyright {

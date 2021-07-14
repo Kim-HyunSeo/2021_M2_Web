@@ -6,7 +6,7 @@ import userRouter from "./routers/userRouter";
 import playRouter from "./routers/playRouter";
 import teamRouter from "./routers/teamRouter";
 
-const PORT = 4000;
+const PORT = 7901;
 
 const app = express();
 const logger = morgan("dev");
@@ -15,6 +15,7 @@ app.use(logger);
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views")
 
+app.use('/images', express.static('images'));
 app.use("/", globalRouter);
 app.use("/user", userRouter);
 app.use("/play", playRouter);

@@ -7,14 +7,13 @@ html(lang='ko')
     script(src='https://use.fontawesome.com/releases/v5.2.0/js/all.js')
     style
       include style.css
-    title 커튼콜 | 메인
+    title #{pageTitle}
   body
     include partials/header.pug
     main
       #main1
         #img1
-          //- img(src='./images/main.png')
-          img(src="main.png")
+          img(src='images/main.png')
         #main1_circle_mine
         #main1_text
           | 연극의 온기를 전달합니다
@@ -322,46 +321,8 @@ html(lang='ko')
           include mixins/comment
           each potato in comments
             +comment(potato)
-          //- .table_row
-          //-   .table_icon
-          //-     i.far.fa-edit
-          //-   .table_title 무슨연극 재밌어요?
-          //-   .table_bubble_icon
-          //-     i.fas.fa-comment-alt
-          //-     .table_bubble 13
-          //-   .table_date 2021/06/09
-          //- .table_row
-          //-   .table_icon
-          //-     i.fas.fa-chalkboard-teacher
-          //-   .table_title 이 연극 개노잼!
-          //-   .table_bubble_icon
-          //-     i.fas.fa-comment-alt
-          //-     .table_bubble 54
-          //-   .table_date 2021/06/09
-          //- .table_row
-          //-   .table_icon
-          //-     i.far.fa-edit
-          //-   .table_title 오늘 저녁 뭐먹지?
-          //-   .table_bubble_icon
-          //-     i.fas.fa-comment-alt
-          //-     .table_bubble 34
-          //-   .table_date 2021/06/09
-          //- .table_row
-          //-   .table_icon
-          //-     i.fas.fa-chalkboard-teacher
-          //-   .table_title 집가고싶다
-          //-   .table_bubble_icon
-          //-     i.fas.fa-comment-alt
-          //-     .table_bubble 22
-          //-   .table_date 2021/06/09
-          //- .table_row
-          //-   .table_icon
-          //-     i.far.fa-edit
-          //-   .table_title 오늘 본 연극 재밌더라고요
-          //-   .table_bubble_icon
-          //-     i.fas.fa-comment-alt
-          //-     .table_bubble 17
-          //-   .table_date 2021/06/09
+          else 
+            //- 게시글이 없습니다.
           .main6_4
             button.main6_4_numberbox 1
             button.main6_4_numberbox 2
@@ -369,4 +330,5 @@ html(lang='ko')
             button.main6_4_numberbox 4
             button.main6_4_numberbox 5
     include partials/footer
-    script(src='./index.js')
+  script
+    include index.js

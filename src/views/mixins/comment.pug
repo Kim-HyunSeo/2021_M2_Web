@@ -1,9 +1,8 @@
 mixin comment(info)
           .table_row
-            .table_icon
-              //- i.far.fa-edit
-              #{info.type}
-            .table_title #{info.title}
+            .table_icon #{info.type}
+            .table_title 
+              a(href=`/videos/info.id`)=info.title
             .table_bubble_icon
               i.fas.fa-comment-alt
               .table_bubble #{info.comments}
