@@ -1,0 +1,16 @@
+body{
+    width: 100vw;
+}
+.main1{
+    position: relative;
+    width: 100vw;
+}
+.main1_text{
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    top: 50%;
+	left: 50%;
+    text-align: center;
+    transform: translate( -50%, -50% );
+}

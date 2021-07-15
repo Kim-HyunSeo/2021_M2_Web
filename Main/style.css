@@ -307,7 +307,7 @@ input::placeholder {
 
 #img1 img {
     width: 100%;
-    height: 580px;
+    height: 670px;
     object-fit: cover;
 }
 
@@ -337,7 +337,7 @@ input::placeholder {
     height: 600px;
     background-color: #B8E0E3;
     border-radius: 50%;
-    top: 50px;
+    top: 90px;
     right: -100px;
     box-shadow: 1px 0px 30px #a1a1a1;
 }
@@ -357,7 +357,7 @@ input::placeholder {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: 20px;
+    top: 60px;
     right: 0;
 }
 
@@ -455,7 +455,7 @@ input::placeholder {
     width: 300px;
     height: 420px;
     background-color: rgb(255, 255, 255);
-    top: 17%;
+    top: 20%;
     right: 0%;
     transform: rotate(-24deg);
     box-shadow: 1px 0px 20px #a1a1a1;
@@ -616,14 +616,18 @@ input::placeholder {
 #box2 {
     display: flex;
     flex-wrap: wrap;
+    width: 1130px;
     justify-content: space-between;
     margin: 0 auto;
+    margin-top: 8%;
 }
 
 #box2_text {
     margin: 20px 0;
     font-size: 36px;
     text-align: center;
+    margin-top: 20%;
+    
 }
 
 .box2_box {
@@ -655,7 +659,7 @@ input::placeholder {
     background-color: #ffffff;
     border: 1px solid #969696;
     right: 1px;
-    top: 38%;
+    top: 39%;
     border-radius: 4px;
 }
 
@@ -681,7 +685,7 @@ input::placeholder {
     background-color: #BECB5B;
     border-radius: 20px;
     right: 22px;
-    top: 22px;
+    top: -20px;
 }
 
 .box2_comment_icon {
@@ -812,7 +816,9 @@ input::placeholder {
     animation-name: cc, dd, ff;
     animation-fill-mode: forwards;
 }
-
+#box3{
+    margin-top: 100px;
+}
 #box3_text1 {
     margin: 20px 0 12px 0;
     font-size: 30px;
@@ -820,7 +826,7 @@ input::placeholder {
 }
 
 #box3_text2 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 20px;
     text-align: center;
     opacity: 0.6;
@@ -833,7 +839,6 @@ input::placeholder {
     width: 900px;
     margin: 0 auto 20px auto;
 }
-
 .box3_jang {
     width: 200px;
     height: 80px;
@@ -879,18 +884,23 @@ input::placeholder {
 }
 
 /* box5 details */
-
+#main5{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
 .main5_text1 {
     font-size: 30px;
     text-align: left;
-    margin: 20px 0 12px 0;
+    margin: 20px 0 12px 30px;
 }
 
 .box5_text_ctn {
+    width: 1100px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     height: 40px;
+    margin: 0 auto;
 }
 
 .main5_text2 {
@@ -899,6 +909,7 @@ input::placeholder {
     text-align: left;
     opacity: 0.6;
     margin-bottom: 20px;
+    margin-left: -20px;
 }
 
 .box5_more {
@@ -907,7 +918,7 @@ input::placeholder {
     border-radius: 20px;
     border: 0;
     background-color: #B8E0E3;
-    color: #191919;
+    color: #ffffff;
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 5px;
@@ -1079,7 +1090,8 @@ input::placeholder {
 }
 
 .board {
-    margin-bottom: 20px;
+    margin-bottom: 30%;
+
 }
 
 .boardtitle {
@@ -1092,7 +1104,7 @@ input::placeholder {
     font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    margin: 30px 0 20px 0;
+    margin: 30px 0 20px 30px;
 }
 
 .boardtitle button {
@@ -1108,12 +1120,12 @@ input::placeholder {
 }
 
 .board table {
-    width: 1200px;
+    width: 1150px;
     margin: 0 auto;
 }
 
 .board table thead {
-    width: 1200px;
+    width: 1150px;
     height: 50px;
     border-top: 1px solid gray;
 }
@@ -1143,13 +1155,18 @@ input::placeholder {
 .table_row {
     display: flex;
     justify-content: space-between;
+    width: 1100px;
+    margin:0 auto ;
     height: 40px;
     padding: 11px 22px 11px 16px;
-    border: 1px solid gray;
+    border: 1px solid rgb(150, 150, 150);
     border-radius: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     line-height: 40px;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 4px 6px rgba(148, 148, 153, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08); */
+}
+.table_row:hover{
+    width: 1120px;
 }
 
 .table_icon {
@@ -1193,16 +1210,17 @@ input::placeholder {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 160px;
+    width: 250px;
+    margin-top: 20px;
 }
 
 .main6_4 button {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     line-height: 15px;
     text-align: center;
-    border: 1px solid white;
-    border-radius: 15px;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 5px;
     background-color: white;
     transition: .3s;
     font-size: 16px;
