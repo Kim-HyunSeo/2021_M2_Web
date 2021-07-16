@@ -334,7 +334,9 @@ input::placeholder {
 }
 
 .main2_text {
+    position: relative;
     font-size: 20px;
+    line-height: 24px;
 }
 
 .main2_text1_family, .main2_text2_family, .main2_text3_family {
@@ -348,8 +350,8 @@ input::placeholder {
 
 .porject_img {
     position: absolute;
-    top: 125%;
-    left: 53%;
+    top: 20px;
+    right: 20px;
 }
 
 .main3 {
