@@ -6,6 +6,7 @@ a {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 60px;
     width: 100%;
     color: rgb(97, 97, 97);
     overflow-x: hidden;
@@ -305,25 +306,23 @@ input::placeholder {
 
 .main1 {
     position: relative;
-    width: 100%;
-}
-
-.main1_img img {
-    width: 100%;
+    width: 100vw;
 }
 
 .main1_text {
-    position: relative;
-    top: -430px;
+    position: absolute;
     font-size: 60px;
     color: white;
+    top: 50%;
+    left: 50%;
     text-align: center;
+    transform: translate( -50%, -50%);
 }
 
 .main2 {
-    width: 800px;
     margin: 0 auto;
-    margin-top: 20px;
+    width: 50%;
+    margin-top: 100px;
 }
 
 .main2_text_family {
@@ -337,36 +336,31 @@ input::placeholder {
 .main2_text {
     position: relative;
     font-size: 20px;
-    line-height: 28px;
-}
-.main2_text1, .main2_text2 {
-    width: 450px;
-    text-align: justify;
+    line-height: 24px;
 }
 
 .main2_text1_family, .main2_text2_family, .main2_text3_family {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .main2_text1_title, .main2_text2_title, .main2_text3_title {
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .porject_img {
     position: absolute;
-    top: 42px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 }
 
 .main3 {
-    margin-top: 60px;
+    margin-top: 100px;
     font-size: 35px;
-    line-height: 40px;
     color: rgb(255, 255, 255);
     background-color: #B8E0E3;
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .main4 {
@@ -374,7 +368,7 @@ input::placeholder {
 }
 
 .main4_title {
-    margin-top: 120px;
+    margin-top: 200px;
     text-align: center;
     font-size: 30px;
 }
@@ -454,7 +448,6 @@ input::placeholder {
 
 .main4_member_text {
     font-size: 15px;
-    line-height: 18px;
     margin: 0 auto;
     text-align: left;
     width: 250px;
@@ -480,7 +473,7 @@ input::placeholder {
     width: 500px;
     font-size: 20px;
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 /* footer details */
