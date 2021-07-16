@@ -313,15 +313,12 @@ input::placeholder {
     position: absolute;
     font-size: 60px;
     color: white;
-    top: 50%;
-    left: 50%;
     text-align: center;
-    transform: translate( -50%, -50%);
 }
 
 .main2 {
     margin: 0 auto;
-    width: 50%;
+    width: 800px;
     margin-top: 100px;
 }
 
@@ -336,11 +333,16 @@ input::placeholder {
 .main2_text {
     position: relative;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.main2_text1, .main2_text2 {
+    width: 450px;
 }
 
 .main2_text1_family, .main2_text2_family, .main2_text3_family {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .main2_text1_title, .main2_text2_title, .main2_text3_title {
@@ -350,7 +352,7 @@ input::placeholder {
 
 .porject_img {
     position: absolute;
-    top: 20px;
+    top: 48px;
     right: 20px;
 }
 
