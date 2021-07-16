@@ -921,6 +921,8 @@ input::placeholder {
     left: 30px;
 }
 
+/* 공지글 details */
+
 .ggg {
     display: flex;
     justify-content: space-between;
