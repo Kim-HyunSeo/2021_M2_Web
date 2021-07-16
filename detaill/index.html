@@ -130,17 +130,6 @@
     </div>
     </div>
     </div>
-    <div class ="img">
-    <div class ="img1"><img src="1.jpeg" width="60%"></div>
-    <div class ="img2"><img src="2.jpeg" width="60%"></div>
-    <div class ="img3_text">할인정보</div>
-    <div class ="img3"><img src="3.jpeg" width="60%"></div>
-    <div class ="img4_text">공연정보</div>
-    <div class ="img4"><img src="4.jpeg" width="60%"></div>
-    <div class ="img5"><img src="5.jpeg" width="60%"></div>
-    <div class ="img6"><img src="6.jpeg" width="60%"></div>
-    <div class ="img7"><img src="7.jpeg" width="60%"></div>
-    </div>
     <div class ="main5">
         <div class ="chatting">
             <div class ="chatting_header">
@@ -171,9 +160,30 @@
             </div>
         </div>
     </div>
+    <div class ="img">
+    <div class ="img1"><img src="1.jpeg" width="60%"></div>
+    <div class ="img2"><img src="2.jpeg" width="60%"></div>
+    <div class ="img3_text">할인정보</div>
+    <div class ="img3"><img src="3.jpeg" width="60%"></div>
+    <div class ="img4_text">공연정보</div>
+    <div class ="img4"><img src="4.jpeg" width="60%"></div>
+    <div class ="img5"><img src="5.jpeg" width="60%"></div>
+    <div class ="img6"><img src="6.jpeg" width="60%"></div>
+    <div class ="img7"><img src="7.jpeg" width="60%"></div>
+    </div>
+    
     <script>
         document.querySelector(".btn_text3").addEventListener('click', function(){
             document.querySelector(".main4").style.display="block";
+            document.querySelector(".main5").style.display="none";
+        })
+        document.querySelector(".btn_text2").addEventListener('click', function(){
+            document.querySelector(".main5").style.display="block";
+            document.querySelector(".main4").style.display="none";
+        })
+        document.querySelector(".btn_text1").addEventListener('click', function(){
+            document.querySelector(".main5").style.display="none";
+            document.querySelector(".main4").style.display="none";
         })
     </script>
 </body>

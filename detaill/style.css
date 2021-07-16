@@ -265,7 +265,8 @@ body{
 }
 .main5{
     width: 100vw;
-    height: 1000px;
+    height: 800px;
+    display: none;
 }
 .chatting{
     width: 60vw;
