@@ -370,7 +370,7 @@ input::placeholder {
 }
 
 .main4_title {
-    margin-top: 200px;
+    margin-top: 80px;
     text-align: center;
     font-size: 30px;
 }
@@ -396,7 +396,7 @@ input::placeholder {
 }
 
 .main4 {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
 .mian4_titles {
@@ -475,7 +475,7 @@ input::placeholder {
     width: 500px;
     font-size: 20px;
     line-height: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 /* footer details */
