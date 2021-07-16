@@ -349,6 +349,7 @@ main {
     position: relative;
     bottom: 24px;
     z-index: 1;
+    margin-bottom: 150px;
 }
 
 .carouselbtn {
@@ -360,6 +361,7 @@ main {
 }
 
 .main_inner_container {
+    height: 950px;
     width: 1200px;
     padding: 0 40px;
     margin: 0 auto;
